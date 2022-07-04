@@ -6,9 +6,10 @@ MicroPython содержит множество расширенных функ�
 
 MicroPython стремится быть максимально совместимым с обычным Python, чтобы вы могли легко переносить код с рабочего стола на микроконтроллер или встроенную систему.
 
-* [ESP8266](https://micropython.org/download/esp8266-1m/)
-* [micropython docs](http://docs.micropython.org/en/latest/library/index.html)
+* [Прошивка для ESP8266](https://micropython.org/download/esp8266-1m/)
+* [micropython документация](http://docs.micropython.org/en/latest/library/index.html)
 
+# Micropython - Перепрошивка платы
 sudo chmod a+rw /dev/ttyUSB0
 pip install esptool
 esptool.py --port /dev/ttyUSB0 erase_flash
