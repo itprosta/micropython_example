@@ -1,2 +1,2 @@
-ssid = 'TadeoKeen'
-password = 'DimaStas2020'
+ssid = '' # имя сети
+password = '' # пароль сети
