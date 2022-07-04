@@ -70,6 +70,7 @@ sudo dnf -y install picocom
 picocom /dev/ttyUSB0 -b115200
 ```
 
+Вот простой код мигания встроенным светодиодном на плате.
 ```py
 import machine
 pin = machine.Pin(2, machine.Pin.OUT)
@@ -79,13 +80,21 @@ pin.off()
 
 # Редактор Thonny
 
-Thonny
+Загрузим на плату код веб сервера на котором можно будет контролировать встроенным светодиодном на плате.
+
+Для этого скачиваем программу Thonny, командой
+```sh
 pip3 install thonny
-
+```
+Или
+```sh
 bash <(curl -s https://thonny.org/installer-for-linux)
-
+```
+Или
+```sh
 sudo apt install python3-tk thonny   [On Debian/Ubuntu]
 sudo dnf install thonny   [On CentOS/RHEL & Fedora]
+```
 
-Windows / Mac
-https://thonny.org/
+Для виндовс или мак
+* [Windows / Mac](https://thonny.org/)
