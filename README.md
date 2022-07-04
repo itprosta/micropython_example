@@ -65,13 +65,27 @@ Fedora Linux
 sudo dnf makecache --refresh
 sudo dnf -y install picocom
 ```
-
+Вводим в терминал команду
+```sh
 picocom /dev/ttyUSB0 -b115200
+```
 
-https://randomnerdtutorials.com/esp32-esp8266-micropython-web-server/
+```py
+import machine
+pin = machine.Pin(2, machine.Pin.OUT)
+pin.on()
+pin.off()
+```
 
-Install Thonny
-https://www.tecmint.com/thonny-python-ide/
+# Редактор Thonny
+
+Thonny
+pip3 install thonny
+
 bash <(curl -s https://thonny.org/installer-for-linux)
 
-change from python to micropython
+sudo apt install python3-tk thonny   [On Debian/Ubuntu]
+sudo dnf install thonny   [On CentOS/RHEL & Fedora]
+
+Windows / Mac
+https://thonny.org/
