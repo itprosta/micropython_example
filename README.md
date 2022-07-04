@@ -1,6 +1,6 @@
 # Micropython_example
 
-[![Product Name Screen Shot][product-screenshot]]([https://example.com](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Micropython-logo.svg/1200px-Micropython-logo.svg.png))
+[![Product Name Screen Shot][product-screenshot](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Micropython-logo.svg/1200px-Micropython-logo.svg.png)
 
 MicroPython pyboard — это компактная электронная плата, которая запускает MicroPython на «голом железе», предоставляя вам низкоуровневую операционную систему Python, которую можно использовать для управления всеми видами электронных проектов.
 
