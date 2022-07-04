@@ -11,7 +11,7 @@ MicroPython стремится быть максимально совмести�
 
 * [micropython документация](http://docs.micropython.org/en/latest/library/index.html)
 
-# ![Смотрите видео тут](https://youtu.be/-a0UWcFG3VA)
+# [Смотрите видео тут](https://youtu.be/-a0UWcFG3VA)
 
 # Перепрошивка платы
 
