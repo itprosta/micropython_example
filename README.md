@@ -31,14 +31,40 @@ esptool.py --port /dev/ttyUSB0 erase_flash
 ```sh
 sudo chmod a+rw /dev/ttyUSB0
 ```
+
+Вводим команду для перепрошивки платы. Проверьте порт, скорость порта должна быть 460800 если будут ошибки, тогда понизьте скорость до 115200. И обязательно укажите путь к файлу прошивки. Отправляем команду и плата перепрошита.
+```sh
 esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 /home/stanislav/Загрузки/esp8266-1m-20220618-v1.19.1.bin
+```
 
-# if error, change 460800 to 115200
 
-To access the prompt over USB-serial you need to use a terminal emulator program. On Windows TeraTerm is a good choice, on Mac you can use the built-in screen program, and Linux has picocom and minicom
+Как я говорил ранее, микропайтон поддерживает функцию интерактивная подсказка, это значит что мы можем вводить код и плата сразу же будет его выполнять. Для этого мы можем использовать программу teraterm для виндовс, screen для Mac и picocom или minicom для Линукс. Установим picocom на линукс. У меня есть список команд для его установки на арч Линукс, дебиан, убунту и федора Линукс.
 
+Выполняем нужные вам команды и идём тестировать.
+
+Arch Linux
+```sh
 sudo pacman -Sy
 sudo pacman -S picocom
+```
+
+Debian Linux
+```sh
+sudo apt-get update
+sudo apt-get install picocom
+```
+
+```sh
+sudo apt update
+sudo apt -y install picocom
+```
+
+Fedora Linux
+```sh
+sudo dnf makecache --refresh
+sudo dnf -y install picocom
+```
+
 picocom /dev/ttyUSB0 -b115200
 
 https://randomnerdtutorials.com/esp32-esp8266-micropython-web-server/
