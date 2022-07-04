@@ -54,7 +54,7 @@ Debian Linux
 sudo apt-get update
 sudo apt-get install picocom
 ```
-
+Или
 ```sh
 sudo apt update
 sudo apt -y install picocom
