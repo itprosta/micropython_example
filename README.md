@@ -104,4 +104,4 @@ sudo dnf install thonny   [On CentOS/RHEL & Fedora]
 # Пример кода веб сервера
 
 Вот пример кода для создания своего веб сервера для контролирования светодиода на плате.
-[a link](https://github.com/itprosta/micropython_example/tree/main/web_server_example)
+[example](https://github.com/itprosta/micropython_example/tree/main/web_server_example)
